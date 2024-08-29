@@ -2,6 +2,8 @@
 
 import clsx from "clsx";
 import Header from './components/Header';
+import Styles from './components/Styles'
+import Card from './components/Card';
 import { useActionState, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { EnterIcon, LoadingIcon } from "@/lib/icons";
@@ -9,6 +11,7 @@ import { usePlayer } from "@/lib/usePlayer";
 import { track } from "@vercel/analytics";
 import { useMicVAD, utils } from "@ricky0123/vad-react";
 import { HeadersAdapter } from "next/dist/server/web/spec-extension/adapters/headers";
+import { ST } from "next/dist/shared/lib/utils";
 
 type Message = {
 	role: "user" | "assistant";
@@ -133,13 +136,11 @@ export default function Home() {
 
 	return (
 		<>
-			
 			<div className="flex h-full">
 				<Header />
 				{/* Left Column - Chat Box */}
-				<div className="flex-1 flex flex-col items-center p-8">
+				<div className="flex-1 flex flex-col items-center p-8 pt-20 w-3/5 bg-white dark:bg-neutral-900">
 					<div className="pb-4 min-h-28" />
-
 					<form
 						className="rounded-full bg-neutral-200/80 dark:bg-neutral-800/80 flex items-center w-full max-w-3xl border border-transparent hover:border-neutral-300 focus-within:border-neutral-400 hover:focus-within:border-neutral-400 dark:hover:border-neutral-700 dark:focus-within:border-neutral-600 dark:hover:focus-within:border-neutral-600"
 						onSubmit={handleFormSubmit}
@@ -202,7 +203,22 @@ export default function Home() {
 							</>
 						)}
 					</div>
+					<div className="flex flex-row space-x-4 pt-10">
+						{/* First Styles Card */}
+						<div className="w-40 h-40">
+							<Styles text="Learn with hands-on examples" fromColor="from-green-500" toColor="to-green-300" />
+						</div>
 
+						{/* Second Styles Card */}
+						<div className="w-40 h-40">
+							<Styles text="For Visual Learners" fromColor="from-purple-500" toColor="to-purple-300" />
+						</div>
+
+						{/* Third Styles Card */}
+						<div className="w-40 h-40">
+							<Styles text="Made For Conversational Learners" fromColor="from-red-500" toColor="to-red-300" />
+						</div>
+					</div>
 					<div
 						className={clsx(
 							"absolute size-36 blur-3xl rounded-full bg-gradient-to-b from-red-200 to-red-400 dark:from-red-600 dark:to-red-800 -z-50 transition ease-in-out",
@@ -216,11 +232,51 @@ export default function Home() {
 					/>
 				</div>
 
-				{/* Right Column - Additional Content*/}
-				<div className="flex flex-col justify-between w-1/3 h-892px bg-gray-100 dark:bg-gray-800 p-8">
-					<h2 className="text-lg font-bold">Right Column</h2>
-					<p>This is the right column content. You can add anything here, like instructions, a log, etc.</p>
+				{/* Right Column - Additional Content
+				<h2 className="font-bold"></h2>
+				<div className="flex flex-col justify-between w-2/5 bg-gray-100 dark:bg-gray-800 p-8">
+					<Card />
+				</div> */}
+				<div className="flex-1 flex flex-col items-center p-8 pl-40 w-2/5 bg-white dark:bg-neutral-900">
+				{/* Flex container for the Styles cards */}
+				<div className="flex flex-row space-x-4 pt-10">
+
+				<div className="w-40 h-40">
+					<Styles text="To-Do List" fromColor="from-green-500" toColor="to-green-300" />
 				</div>
+
+				{/* Second Styles Card */}
+				<div className="w-40 h-40">
+					<Styles text="Weather app" fromColor="from-purple-500" toColor="to-purple-300" />
+				</div>
+
+				{/* Third Styles Card */}
+				<div className="w-40 h-40">
+					<Styles text="Tracker App" fromColor="from-red-500" toColor="to-red-300" />
+				</div>
+
+
+					</div>
+
+				<div className="pb-2" />
+				<div className="text-neutral-400 dark:text-neutral-600 pt-4 text-center max-w-xl text-balance min-h-28 space-y-4 flex items-center justify-center">
+					<Card />
+					{/* <span className="ml-4"># text here</span> Add text inside a span and add margin-left for spacing */}
+				</div>
+
+
+				<div
+					className={clsx(
+					"absolute size-36 blur-3xl rounded-full bg-gradient-to-b from-red-200 to-red-400 dark:from-red-600 dark:to-red-800 -z-50 transition ease-in-out",
+					{
+						"opacity-0": vad.loading || vad.errored,
+						"opacity-30": !vad.loading && !vad.errored && !vad.userSpeaking,
+						"opacity-100 scale-110": vad.userSpeaking,
+					}
+					)}
+				/>
+				</div>
+
 			</div>
 		</>
 	);
