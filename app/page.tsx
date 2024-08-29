@@ -133,7 +133,6 @@ export default function Home() {
 
 	return (
 		<>
-			
 			<div className="flex h-full">
 				<Header />
 				{/* Left Column - Chat Box */}
@@ -217,7 +216,7 @@ export default function Home() {
 				</div>
 
 				{/* Right Column - Additional Content*/}
-				<div className="flex flex-col justify-between w-1/3 h-892px bg-gray-100 dark:bg-gray-800 p-8">
+				<div className="flex flex-col justify-between w-1/3 h-892px bg-gray-100 dark:bg-gray-800 p-8 rounded-lg">
 					<h2 className="text-lg font-bold">Right Column</h2>
 					<p>This is the right column content. You can add anything here, like instructions, a log, etc.</p>
 				</div>
