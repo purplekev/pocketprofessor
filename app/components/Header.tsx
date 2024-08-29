@@ -28,14 +28,13 @@ const Header = () => {
                         <li className="flex">
                             <a rel="noopener noreferrer" href="/projects" className="flex items-center px-4 -mb-1 border-b-2 border-transparent dark:border-transparent">Projects</a>
                         </li>
-                        <li className="flex">
-                            <a rel="noopener noreferrer" href="/leaderboard" className="flex items-center px-4 -mb-1 border-b-2 border-transparent dark:border-transparent">Leaderboard</a>
-                        </li>
                     </ul>
                 </div>
                 
                 <div className="items-center flex-shrink-0 hidden lg:flex">
+                    <img src="../images/fireEmoji.png" width="7%" height="7%" className="mr-7"/>
                     <div className="border-2 border-black rounded-full">
+                        
                         <button className="p-1.5 dark:bg-violet-600 dark:text-gray-50">PP</button>
                     </div>
                 </div>
