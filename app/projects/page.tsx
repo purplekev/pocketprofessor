@@ -178,6 +178,8 @@ export default function Home() {
 
     return (
         <>
+        <Header/>
+
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-2 lg:px-4">
               <div className="mx-auto max-w-2xl lg:mx-0">
@@ -229,8 +231,7 @@ export default function Home() {
             </div>
             </div>
         </div>
-        <Header/>
-            
+        
         </>
     );
 }

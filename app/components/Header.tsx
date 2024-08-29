@@ -3,8 +3,8 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <header className="fixed top-0 p-1 w-full h-[68px] bg-white-500 text-black dark:bg-gray-800 dark:text-white z-1000">
-            <div className="container flex justify-between items-center h-full mx-auto">
+        <header className="-mt-2 fixed top-0 p-1 w-full h-[68px] bg-white-800 text-black dark:bg-gray-800 dark:text-white z-1000">
+            <div className="container flex justify-between items-center h-full mx-auto z-1000 bg-white">
                 <div className="flex justify-center items-center h-full">
                     <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-8 h-8 dark:text-violet-600">
@@ -22,12 +22,8 @@ const Header = () => {
                         </li>
                         <li className="flex">
                             <Link href="/myprofile" className="flex items-center px-4 -mb-1 border-b-2 border-transparent dark:border-transparent">
-                                
                                 My Profile
                             </Link>
-                        </li>
-                        <li className="flex">
-                            <a rel="noopener noreferrer" href="/myProfile" className="flex items-center px-4 -mb-1 border-b-2 border-transparent dark:border-transparent">My Profile</a>
                         </li>
                         <li className="flex">
                             <a rel="noopener noreferrer" href="/projects" className="flex items-center px-4 -mb-1 border-b-2 border-transparent dark:border-transparent">Projects</a>
