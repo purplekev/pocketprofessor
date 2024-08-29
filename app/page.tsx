@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Header from './components/Header';
 import Styles from './components/Styles'
 import Card from './components/Card';
+import Styles2 from './components/Styles2'
 import { useActionState, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { EnterIcon, LoadingIcon } from "@/lib/icons";
@@ -197,17 +198,17 @@ export default function Home() {
 					<div className="flex flex-row space-x-4 pt-10">
 						{/* First Styles Card */}
 						<div className="w-40 h-40">
-							<Styles text="Learn with hands-on examples" fromColor="from-green-500" toColor="to-green-300" />
+							<Styles2 text="Learn with hands-on examples" fromColor="from-green-500" toColor="to-green-300" />
 						</div>
 
 						{/* Second Styles Card */}
 						<div className="w-40 h-40">
-							<Styles text="For Visual Learners" fromColor="from-purple-500" toColor="to-purple-300" />
+							<Styles2 text="For helping Visual Learners" fromColor="from-purple-500" toColor="to-purple-300" />
 						</div>
 
 						{/* Third Styles Card */}
 						<div className="w-40 h-40">
-							<Styles text="Made For Conversational Learners" fromColor="from-red-500" toColor="to-red-300" />
+							<Styles2 text="Made For Conversational Learners" fromColor="from-red-500" toColor="to-red-300" />
 						</div>
 					</div>
 					<div
