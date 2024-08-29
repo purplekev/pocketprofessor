@@ -1,12 +1,14 @@
 "use client";
 
 import clsx from "clsx";
+import Header from './components/Header';
 import { useActionState, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { EnterIcon, LoadingIcon } from "@/lib/icons";
 import { usePlayer } from "@/lib/usePlayer";
 import { track } from "@vercel/analytics";
 import { useMicVAD, utils } from "@ricky0123/vad-react";
+import { HeadersAdapter } from "next/dist/server/web/spec-extension/adapters/headers";
 
 type Message = {
 	role: "user" | "assistant";
@@ -131,6 +133,7 @@ export default function Home() {
 
 	return (
 		<>
+			<Header/>
 			<div className="pb-4 min-h-28" />
 
 			<form
