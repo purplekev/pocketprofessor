@@ -136,8 +136,9 @@ export default function Home() {
 
 	return (
 		<>
-			<div className="flex h-full">
 				<Header />
+
+			<div className="flex">
 				{/* Left Column - Chat Box */}
 				<div className="flex-1 flex flex-col items-center p-8 pt-20 w-3/5 bg-white dark:bg-neutral-900">
 					<div className="pb-4 min-h-28" />

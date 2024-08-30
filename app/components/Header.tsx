@@ -16,11 +16,6 @@ const Header = () => {
                         <Link href="/">PocketProfessor</Link>
                     </span>
                         <li className="flex">
-                            <Link href="/explore" className="flex items-center px-4 -mb-1 border-b-2 border-transparent dark:border-transparent">
-                                Explore
-                            </Link>
-                        </li>
-                        <li className="flex">
                             <Link href="/myprofile" className="flex items-center px-4 -mb-1 border-b-2 border-transparent dark:border-transparent">
                                 My Profile
                             </Link>
@@ -32,10 +27,8 @@ const Header = () => {
                 </div>
                 
                 <div className="items-center flex-shrink-0 hidden lg:flex">
-                    <img src="../images/fireEmoji.png" width="7%" height="7%" className="mr-7"/>
                     <div className="border-2 border-black rounded-full">
-                        
-                        <button className="p-1.5 dark:bg-violet-600 dark:text-gray-50">PP</button>
+
                     </div>
                 </div>
 

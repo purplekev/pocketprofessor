@@ -7,7 +7,7 @@ import Header from '../components/Header';
 const posts = [
     {
       id: 1,
-      image: '../images/image1.png',
+      image: '../images/image6.jpg',
       title: 'Weather App',
       href: '#',
       description:
@@ -16,8 +16,8 @@ const posts = [
       datetime: '2020-03-16',
       category: { title: 'Beginner/Group', href: '#' },
       author: {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
+        name: 'Gengis Jhan',
+        role: 'Student',
         href: '#',
         imageUrl:
           'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -25,8 +25,8 @@ const posts = [
     },
     {
         id: 2,
-        image: '../images/image2.png',
-        title: 'Boost your conversion rate',
+        image: '../images/image11.png',
+        title: 'Calculator App',
         href: '#',
         description:
             'Implement a simple calculator with basic arithmetic operations.',
@@ -34,34 +34,17 @@ const posts = [
         datetime: '2020-03-16',
         category: { title: 'Beginner', href: '#' },
         author: {
-            name: 'Michael Foster',
-            role: 'Co-Founder / CTO',
+            name: 'Platty Irus',
+            role: 'Parent',
             href: '#',
             imageUrl:
             'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
     },
-    {
-        id: 1,
-        image: '../images/image3.png',
-        title: 'To-Do List Application',
-        href: '#',
-        description:
-          'Build a basic to-do list app where users can add, remove, and mark tasks as complete.',
-        date: 'Mar 7, 2020',
-        datetime: '2020-03-16',
-        category: { title: 'Beginner', href: '#' },
-        author: {
-          name: 'Michael Foster',
-          role: 'Co-Founder / CTO',
-          href: '#',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
+  
       {
         id: 1,
-        image: '../images/image4.png',
+        image: '../images/image9.png',
         title: 'AI-Powered Chatbot',
         href: '#',
         description:
@@ -79,94 +62,22 @@ const posts = [
       },
       {
           id: 2,
-          image: '../images/image1.png',
-          title: 'Boost your conversion rate',
+          image: '../images/image10.png',
+          title: 'Cookie Clicker App',
           href: '#',
           description:
-              'Create a project management tool with features for task management.',
+              'Game app of infinite cookie clicking with in game ads.',
           date: 'Mar 5, 2020',
           datetime: '2020-03-16',
           category: { title: 'Intermediate', href: '#' },
           author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
+              name: 'Michael Jordan',
+              role: 'Gardener',
               href: '#',
               imageUrl:
               'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
           },
       },
-      {
-          id: 1,
-          image: '../images/image2.png',
-          title: 'Project Management Tool',
-          href: '#',
-          description:
-            'Develop a real-time collaborative text editor that allows simultaenously.',
-          date: 'Mar 4, 2020',
-          datetime: '2020-03-16',
-          category: { title: 'Intermediate', href: '#' },
-          author: {
-            name: 'Michael Foster',
-            role: 'Co-Founder / CTO',
-            href: '#',
-            imageUrl:
-              'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-          },
-        },
-        {
-            id: 1,
-            image: '../images/image3.png',
-            title: 'Event Booking System',
-            href: '#',
-            description:
-              'Build a system for booking and managing events with user authentication.',
-            date: 'Mar 3, 2020',
-            datetime: '2020-03-16',
-            category: { title: 'Expert', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
-          },
-          {
-              id: 2,
-              image: '../images/image4.png',
-              title: 'Online Learning Platform',
-              href: '#',
-              description:
-                  'Develop a platform for online courses with features for video hosting.',
-              date: 'Mar 2, 2020',
-              datetime: '2020-03-16',
-              category: { title: 'Expert', href: '#' },
-              author: {
-                  name: 'Michael Foster',
-                  role: 'Co-Founder / CTO',
-                  href: '#',
-                  imageUrl:
-                  'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-              },
-          },
-          {
-              id: 1,
-              image: '../images/image1.png',
-              title: 'Financial Dashboard',
-              href: '#',
-              description:
-                'Create a financial dashboard that aggregates and visualizes financial data from various sources.',
-              date: 'Mar 1, 2020',
-              datetime: '2020-03-16',
-              category: { title: 'Expert', href: '#' },
-              author: {
-                name: 'Michael Foster',
-                role: 'Co-Founder / CTO',
-                href: '#',
-                imageUrl:
-                  'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-              },
-            },
     // More posts...
   ];
 
